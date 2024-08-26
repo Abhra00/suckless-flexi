@@ -241,7 +241,7 @@ ResourcePref resources[] = {
 		{ "cwscale",        FLOAT,   &cwscale },
 		{ "chscale",        FLOAT,   &chscale },
 		{ "alpha",          FLOAT,   &alpha },
-		{ "alphaUnfocused", FLOAT,  &alphaUnfocused },
+		{ "alphaUnfocused", FLOAT,   &alphaUnfocused },
 		{ "highlightfg",    INTEGER, &highlightfg },
 		{ "highlightbg",    INTEGER, &highlightbg },
 };
