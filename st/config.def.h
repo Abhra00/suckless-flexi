@@ -128,7 +128,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 float alphaUnfocused = 0.6;
 
 /* Terminal colors (16 first used in escape sequence) */
@@ -258,14 +258,14 @@ static uint forcemousemod = ShiftMask;
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* mask                 button   function        argument       release  screen */
-	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
+	/* mask                 button   function        argument       	release  screen */
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      	1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
-	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1},      0, S_PRI },
-	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1},      0, S_PRI },
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"}, 0, S_ALT },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"}, 0, S_ALT },
+	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1},      	0,	 S_PRI },
+	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1},      	0, 	 S_PRI },
+	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"}, 	0, 	 S_ALT },
+	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"}, 	0, 	 S_ALT },
 };
 
 /* Internal keyboard shortcuts. */
