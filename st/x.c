@@ -2433,7 +2433,7 @@ xsetcursor(int cursor)
 {
 	if (!BETWEEN(cursor, 0, 8)) /* 7-8: st extensions */
 		return 1;
-	win.cursor = cursor;
+	win.cursor = (cursor ? cursor : cursorstyle);
 	cursorblinks = win.cursor == 0 || win.cursor == 1 ||
 	               win.cursor == 3 || win.cursor == 5 ||
 	               win.cursor == 7;
