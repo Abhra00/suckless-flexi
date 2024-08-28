@@ -1,0 +1,4 @@
+/* Patches */
+
+#include "dwmlogo.h"
+
