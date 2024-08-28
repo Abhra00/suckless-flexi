@@ -284,9 +284,9 @@ static const char *dmenucmd[] = {
 	"-nf", normfgcolor,
 	"-sb", selbgcolor,
 	"-sf", selfgcolor,
-	"-x",  "645",
-        "-y",  "370",
-	"-z",  "580",
+	"-X",  "645",
+        "-Y",  "370",
+	"-W",  "580",
 	"-p",  "Run:",  
 	NULL
 };
@@ -315,7 +315,7 @@ static const char *unmountcmd[]    = { "unmounter",  NULL };
 
 /* networking-cmds */
 static const char *netmancmd[]     = { "dmenu-netman",  NULL };
-static const char *bluemancmd[]    = { "dmenu-bluetooth", "-x", "645", "-y", "370", "-z", "580", "-p", "Choose:",  NULL };
+static const char *bluemancmd[]    = { "dmenu-bluetooth", "-X", "645", "-Y", "370", "-W", "580", "-p", "Choose:",  NULL };
 
 /* wallchangercmd */
 static const char *wallcmd[]       = { "dmenu-wallpaper",  NULL };
