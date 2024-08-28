@@ -188,7 +188,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "SPLASH",  .isfloating = 1, .floatpos = "50% 50% 300W 300H")
 	RULE(.class = "Gimp", .tags = 1 << 4)
 	RULE(.class = "firefox", .tags = 1 << 2)
-	RULE(.class = "st", .isterminal = 1, .noswallow = 0)
+	RULE(.class = "St", .isterminal = 1, .noswallow = 0)
 	RULE(.instance = "spterm",  .scratchkey = 'a', .isfloating = 1, .floatpos = "50% 20% 1200W 400H")
 	RULE(.instance = "spfm",    .scratchkey = 's', .isfloating = 1, .floatpos = "50% 20% 1200W 800H")
 	RULE(.instance = "spmusic", .scratchkey = 'd', .isfloating = 1, .floatpos = "50% 20% 1200W 400H")
