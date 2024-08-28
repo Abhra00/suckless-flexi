@@ -278,12 +278,16 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {
 	"dmenu_run",
-	"-m", dmenumon,
+	"-m",  dmenumon,
 	"-fn", dmenufont,
 	"-nb", normbgcolor,
 	"-nf", normfgcolor,
 	"-sb", selbgcolor,
 	"-sf", selfgcolor,
+	"-x",  "645",
+        "-y",  "370",
+	"-z",  "580",
+	"-p",  "Run:",  
 	NULL
 };
 static const char *termcmd[]       = { "st", NULL };
