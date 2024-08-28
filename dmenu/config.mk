@@ -25,10 +25,6 @@ FREETYPEINC = /usr/include/freetype2
 # Uncomment this for the alpha patch / ALPHA_PATCH
 XRENDER = -lXrender
 
-# Uncomment for the pango patch / PANGO_PATCH
-#PANGOINC = `pkg-config --cflags xft pango pangoxft`
-#PANGOLIB = `pkg-config --libs xft pango pangoxft`
-
 # includes and libs
 INCS = -I$(X11INC) -I$(FREETYPEINC) ${PANGOINC}
 LIBS = -L$(X11LIB) -lX11 $(XINERAMALIBS) $(FREETYPELIBS) -lm $(XRENDER) ${PANGOLIB}
