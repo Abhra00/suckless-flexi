@@ -315,7 +315,7 @@ static const char *unmountcmd[]    = { "unmounter",  NULL };
 
 /* networking-cmds */
 static const char *netmancmd[]     = { "dmenu-netman",  NULL };
-static const char *bluemancmd[]    = { "dmenu-bluetooth",  NULL };
+static const char *bluemancmd[]    = { "dmenu-bluetooth", "-x", "645", "-y", "370", "-z", "580", "-p", "Choose:",  NULL };
 
 /* wallchangercmd */
 static const char *wallcmd[]       = { "dmenu-wallpaper",  NULL };
